@@ -1,5 +1,2 @@
 web gunicorn app:app
-web gunicorn dep:app
-web: gunicorn gettingstarted.wsgi --log-file -
-worker: bundle exec rake jobs:work
-web: gunicorn app
+web: python manage.py runserver
